@@ -1,0 +1,36 @@
+.follow_container{
+display: grid;
+border: 2px solid lightgray;
+
+.whole_div {
+    display: grid;
+    grid-template-areas: "profile_pic h1 h1"
+    "profile_pic follow follow";;
+}
+    
+.profile {
+    grid-area: profile_pic;
+    display: flex;
+    border: 2px solid lightgray;
+    height: 10vh;
+    width: 10vh;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.h1 {
+    grid-area: h1;
+    font-weight: 500;
+}
+
+.followMe {
+    grid-area: follow;
+    height: 3.5vh;
+    width: 50vw;
+    background-color: #0096FF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+}
